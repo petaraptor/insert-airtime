@@ -32,6 +32,12 @@ h2  {
     
 }
 
+h3  {
+    font-family: monospace;
+    color: white;
+    font-size: 12px;
+}
+
 
 body {
     background-color: black;
@@ -50,7 +56,6 @@ body {
     background: transparent;
     margin:10px;
     text-align: center;
-    display:table-cell;
     vertical-align:middle;
     
 }
@@ -58,6 +63,7 @@ body {
 .title {
     position: fixed;
     width: 100%;
+    height: auto;
     margin-top: auto;
     -ms-transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
@@ -111,33 +117,50 @@ body {
 
 .current {
     background-color: red;
-    float: left;
     width: 600px;
     height:auto;
     overflow:scroll;
     max-height:1000px;
+    margin: 0 auto;
+    vertical-align: top;
+    display: inline-table;
 }
 
 .previous {
     background-color: green;
-    float: left;
     height:auto;
     overflow:scroll;
     width: 300px;
     max-height:1000px;
+    margin: 0 auto;
+    vertical-align: top;
+    display: inline-table;
 }
 
 .next {
     background-color: black;
-    float: left;
     height:auto;
     overflow:scroll;
     width: 300px;
-    max-height:1000px;   
+    max-height:1000px;
+    margin: 0 auto;
+    vertical-align: top;
+    display: inline-table;
 }
 
 .content {
+    display: inline-table;
     position:absolute;
-    width: 100&;
+    top: -14%;
+    max-width: 1000px;
     margin-top: 800px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    padding: 0;
+    
+}
+
+footer {
+    font-size: 1px;
 }
