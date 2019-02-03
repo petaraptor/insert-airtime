@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "gameplay";
+    src: url("fonts/gameplay-webfont.tff");
+    src:
+    url("fonts/gameplay-webfont.woff") format("woff"),
+    url("fonts/gameplay-webfont.woff") format("woff2")
+    
+}
+
+@font-face {
+    font-family: "pixeloperator";
+    src: url("fonts/pixeloperatorhb-webfont.tff");
+    src:
+    url("fonts/pixeloperatorhb-webfont.woff") format("woff"),
+    url("fonts/pixeloperatorhb-webfont.woff2") format("woff2")
+}
+
+
+h1  {
+    font-family: gameplay;
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 1px 1px rgba(251, 12, 12,1), 0px 0px 3px rgba(12, 79, 251,.5), 0px 2px 1px rgba(52, 251, 12, 1);
+    animation: chromaticMove 4500ms ease infinite,pulse ease 200ms  infinite;
+    
+    
+}
+
+h2  {
+    font-family: pixeloperator;
+    color: white;
+    
+}
+
+
+body {
+    background-color: black;
+    background-image: url("images/test4optimised.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    
+}
+
+
+
+
+.area {
+    height: 100px;
+    width: 100px;
+    background: transparent;
+    margin:10px;
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+    
+}
+
+.title {
+    position: fixed;
+    width: 100%;
+    margin-top: auto;
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.subtitle-frame {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.subtitle-text {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding: 10px 40px 20px 40px;
+    background-color: transparent;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 10px;
+    max-height:200px;
+}
+
+@keyframes gradientMove { 
+    0%{background-size: 100% 4px}
+    50%{background-size: 100% 2px}
+    100%{background-size: 100% 4px}
+}
+
+@keyframes pulse { 
+    0%{ opacity:.9;transform: skewX(.5deg);}
+    25%{ opacity:1;}
+    50%{opacity:.9;}
+    75%{ opacity:1; transform:skewX(.5deg);}
+    100%{opacity:.9;}
+}
+@keyframes chromaticMove { 
+    0%{text-shadow: 3px 2px 2px rgba(251, 12, 12,1), 0px -1px 3px rgba(12, 79, 251,.5),0px 0px -2px rgba(52, 251, 12, 1);}
+    50%{text-shadow: 3px 2px 2px rgba(251, 12, 12,1), 0px -1px 3px rgba(12, 79, 251,.5),-3px 2px 3px rgba(52, 251, 12, 1);}
+    100%{text-shadow: 3px 2px 2px rgba(251, 12, 12,1), 0px -1px 3px rgba(12, 79, 251,.5),2px -1px 2px rgba(52, 251, 12, 1);}
+}
+
+.current {
+    background-color: red;
+    float: left;
+    width: 600px;
+    height:auto;
+    overflow:scroll;
+    max-height:1000px;
+}
+
+.previous {
+    background-color: green;
+    float: left;
+    height:auto;
+    overflow:scroll;
+    width: 300px;
+    max-height:1000px;
+}
+
+.next {
+    background-color: black;
+    float: left;
+    height:auto;
+    overflow:scroll;
+    width: 300px;
+    max-height:1000px;   
+}
+
+.content {
+    position:absolute;
+    width: 100&;
+    margin-top: 800px;
+}
