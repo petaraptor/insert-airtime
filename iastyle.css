@@ -69,12 +69,13 @@ body {
 
 .title {
     position: fixed;
-    width: 100%;
-    height: auto;
+    width: 100wv;
+    height: 100px;
     margin-top: auto;
     -ms-transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg);
+    text-align: center;
 }
 
 .subtitle-frame {
@@ -156,7 +157,6 @@ body {
 }
 
 .content {
-    display: inline-table;
     position:absolute;
     top: -14%;
     max-width: 1000px;
