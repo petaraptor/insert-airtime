@@ -62,6 +62,7 @@ body {
 .area {
     height: 100px;
     width: auto;
+    min-width: 600px;
     background: transparent;
     margin: auto;
     vertical-align:middle;
