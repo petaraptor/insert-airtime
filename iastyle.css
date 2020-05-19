@@ -53,10 +53,18 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+	max-width: 100%;
     
 }
 
 
+#bgvideo {
+	position: fixed;
+	right: 0;
+	Bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
 
 
 .area {
@@ -76,16 +84,31 @@ body {
   }
   #content {
     width: 600px;
+	left: auto;
   }
+}
+
+@media (max-width: 900px) {
+	
+  .titlelong 	{ display: none; }
+   h1			{ font-size: 200px; }
+
+}
+
+@media (min-width: 900px) {
+	
+	.titleshort { display: none; }
+	
 }
 
   
   
-.title {
+.titlelong {
     position: fixed;
     width: 100vw;
     min-width: 600px;
     height: auto;
+	left: auto;
     margin-top: 10vh;
     -ms-transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
@@ -93,9 +116,18 @@ body {
     text-align: center;
 }
 
+.titleshort {
+    position: fixed;
+    width: 100vw;
+    left: auto;
+    height: auto;
+    margin-top: 10vh;
+    text-align: center;
+}
+
 .subtitle-frame {
     position: fixed;
-    top: 50%;
+    bottom: 10%;
     left: 50%;
     width: auto;
     height: auto;
